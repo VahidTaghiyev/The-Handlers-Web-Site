@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Programming art</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> 
+        <script type="text/javascript" src="scripts.js"></script>      
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="ada-logo">
+                <a href="https://www.ada.edu.az/en" target="_blank"><img src="./media/ada_logo_color.png" alt=""></a>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Main Page</a>
+                <a href="./team-members.html">Team Members</a>
+                <a href="./hour-of-code.html">Hour of Code event</a>
+                <a href="./web-project.html">Web Project</a>
+                <a href="./code-artist.html">Code Artist</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="art-section" style="text-align:center">
+                <canvas id="art-canvas" width="640" height="480">
+                    Sorry ... your browser doesn't support the HTML5 canvas element.
+                </canvas>        
+            </div>   
+        </div>
+        <div class="footer">
+            <div class="footer-info">
+                <h2>We are The Handlers</h2>
+                <ul>
+                    <li>Shamsaddin Khan-Babayev</li>
+                    <li>Vahid Taghiyev</li>
+                    <li>Mekhman Huseynov</li>
+                    <li>Nijat Osmali</li>
+
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h1>Visit other pages!</h1>
+                <a href="./index.html">Main Page</a>
+                <a href="./team-members.html">Team Members</a>
+                <a href="./hour-of-code.html">Hour of Code event</a>
+                <a href="./web-project.html">Web Project</a>
+                <a href="./code-artist.html">Code Artist</a>
+            </div>
+        </div>
+       
+
+        <script type="text/javascript">
+            // Get reference to the 2D context of the canvas
+            let canvas = document.getElementById("art-canvas");
+            let context = canvas.getContext("2d");
+            // Set the color for drawing lines using red, green and blue components
+            // context.strokeStyle = 'rgb(255, 0, 0)';
+            context.strokeStyle = `rgb(${255 * Math.random()}, ${255 * Math.random()}, ${255 * Math.random()})`;
+            DrawSpiral(context);
+        </script>
+    </body>
+</html>

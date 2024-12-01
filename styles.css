@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono&display=swap');
+:root {
+    --ada-blue: #336178;
+    --ada-red: #ae485e;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+body{
+    /*background-color: var(--ada-blue);*/
+    color:none;
+    max-height: 100%;
+    width: 100%;
+}
+/*navigation bar*/
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 5px 40px 5px 40px;
+    background-color: #f5ebe0;
+}
+.navbar .ada-logo{
+    width: 200px;
+    height: 80%;
+}
+.navbar .ada-logo img{
+    width: 80px;
+    height: 70px;
+    padding: 7px;
+}
+.navbar .nav-links{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.navbar .nav-links a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+}
+.navbar .nav-links a.active{
+    color: #c1121f;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar .nav-links a:hover{
+    transition: 200ms;
+    font-size: 18px;
+    font-weight: 500;
+    color: #eb5e28;
+}
+
+/* section part */
+.section{
+    width: 100%;
+    height: 1500px;
+    background-color: #f6e4da;
+}
+/* Team Introduction Page */
+.team-introduction-section{
+    width: 100%;
+    height: 1000px;
+    padding: 70px 100px;
+    background-color: #f6e4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.team-introduction-section #heading-word{
+    text-align: center;
+    font-size: 49px;
+}
+.team-introduction-section #heading-p{
+    text-align: center;
+    font-size: 29px;
+    margin-top: 40px;
+    font-weight: 300;
+}
+.team-introduction-section-cards-holder{
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.team-introduction-section-cards-holder-card{
+    border: 2px solid black;
+    width: 23%;
+    min-width: 250px;
+    max-width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 19px;
+    padding: 10px;
+}
+.team-introduction-section-cards-holder-card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+.team-introduction-section-cards-holder-card h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+.team-introduction-section-cards-holder-card p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+/* Hour of Code Page */
+.hour-of-code-section{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 200px;
+    flex-direction: column;
+    background-color: #f6e4da;
+}
+.first-row{
+    width: 100%;
+    height: 400px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.first-row-left{
+    width: 50%;
+    height: 100%;
+
+}
+.first-row-left h1{
+    font-size: 49px;
+}
+.first-row-left p{
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.first-row-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+.first-row-right img{
+    width: 450px;
+    height: 380px;
+    margin-top: 7px;
+}
+.second-row{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    max-width: 1200px;
+}
+.second-row-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+.second-row-left img{
+    width: 440px;
+    height: 380px;
+    margin-top: 10px;
+}
+.second-row-right{
+    width: 50%;
+    height: 100%;
+    padding-top: 40px;
+}
+.second-row-right h1{
+    font-size: 49px;
+}
+.second-row-right p{
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.third-row{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    max-width: 1200px;
+}
+.third-row-left{
+    width: 50%;
+    height: 100%;
+}
+.third-row-left h1{
+    font-size: 49px;
+}
+.third-row-left p{
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.third-row-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+.third-row-right img{
+    width: 450px;
+    height: 380px;
+    margin-top: 7px;
+}
+/*team members section*/
+.team-members-section{
+    width: 100%;
+    height: 2000px;
+    padding: 70px 100px;
+    background-color: #f6e4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-members-card{
+    width: 100%;
+    height: 500px;
+    border:1px solid black;
+    padding: 50px 0;
+}
+#special-h1{
+    font-size: 45px;
+}
+#special-section{
+    width: 100%;
+    height: 1500px;
+}
+/* art section*/
+.art-section{
+    height: 700px;
+    padding: 100px;
+    
+}
+/* footer part */
+.footer{
+    background-color: #fffcf2;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.footer-info{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-top: 8px;
+    padding-left: 70px;
+}
+.footer-info h1{
+    font-weight: 500;
+}
+.footer-info h2{
+    margin-top: 10px;
+    font-weight: 700;
+    color: #252422;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-info ul{
+    margin-top: 20px;
+}
+.footer-info ul li{
+    list-style: none;
+    margin: 19px 0;
+    font-weight: 300;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252422;
+}
+.footer-nav{
+    width: 35%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.footer-nav h1{
+    color: #252422;
+}
+.footer-nav a{
+    color: #252422;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+}
+.footer-nav a:hover{
+    transition: 200ms;
+    font-size: 18px;
+    font-weight: 500;
+    color: #eb5e28;
+}
